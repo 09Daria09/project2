@@ -1,0 +1,13 @@
+<section class="see-world">
+    <h2>Go See the World</h2>
+    <div class="card-container">
+      <div class="card" *ngFor="let article of articles">
+        <img [src]="article.src" alt="{{ article.title }}">
+        <div class="card-body">
+          <h3>{{ article.title }}</h3>
+          <p>{{ article.text }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
